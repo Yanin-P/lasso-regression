@@ -1,1 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yanin Prasoptham — CV</title>
+
+  <!--
+    Single-file CV for GitHub Pages.
+    - All CSS is contained below inside <style>.
+    - To update content, edit the <body> sections.
+    - Update email address in the header if it changes.
+  -->
+
+  <style>
+    /* Typography & base */
+    :root{
+      --max-width: 960px;
+      --accent: #1f6feb; /* professional blue accent */
+      --text: #111111;
+      --muted: #555555;
+      --bg: #ffffff;
+      --surface: #f7f8fb;
+      --border: #e6e9ef;
+      --page-padding: 24px;
+      --radius: 10px;
+      --line-height: 1.45;
+      --section-gap: 1.25rem;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      color:var(--text);
+      background: linear-gradient(180deg, #f4f6fb 0%, #ffffff 40%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:28px auto;
+      padding:var(--page-padding);
+      background:var(--bg);
+      border-radius:var(--radius);
+      box-shadow: 0 8px 30px rgba(20,30,40,0.08);
+      border:1px solid var(--border);
+    }
+
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      border-bottom:1px solid var(--border);
+      padding-bottom:14px;
+      margin-bottom:18px;
+    }
+
+    .name-block{
+      flex:1 1 60%;
+      min-width:220px;
+    }
+
+    h1{
+      margin:0;
+      font-size:1.75rem;
+      letter-spacing:0.2px;
+      line-height:1.05;
+    }
+
+    .subhead{
+      margin-top:6px;
+      color:var(--muted);
+      font-size:0.95rem;
+    }
+
+    .contact{
+      text-align:right;
+      flex:1 1 35%;
+      min-width:180px;
+      font-size:0.95rem;
+    }
+
+    .contact a{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    /* Main layout */
+    main{
+      padding-top:6px;
+    }
+
+    section{
+      margin-bottom:var(--section-gap);
+    }
+
+    h2{
+      margin:0 0 10px 0;
+      font-size:1.05rem;
+      color:var(--accent);
+      letter-spacing:0.3px;
+    }
+
+    /* Experience / items */
+    .item{
+      padding:12px 0;
+      border-bottom:1px dashed var(--border);
+    }
+
+    .item:last-child{
+      border-bottom: none;
+    }
+
+    .item-header{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:8px;
+      align-items:baseline;
+    }
+
+    .item-title{
+      font-weight:700;
+      font-size:1rem;
+    }
+
+    .item-meta{
+      color:var(--muted);
+      font-size:0.92rem;
+    }
+
+    ul.bullets{
+      margin:8px 0 0 1rem;
+      padding:0;
+      line-height:var(--line-height);
+    }
+
+    ul.bullets li{
+      margin:6px 0;
+    }
+
+    /* Skills / small lists */
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:8px;
+    }
+
+    .chip{
+      background:var(--surface);
+      border:1px solid var(--border);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+
+    /* Footer note */
+    .print-note{
+      margin-top:12px;
+      color:var(--muted);
+      font-size:0.88rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width:720px){
+      header{
+        align-items:flex-start;
+      }
+      .contact{
+        text-align:left;
+        order:3;
+        width:100%;
+      }
+      .name-block{
+        width:100%;
+        order:1;
+      }
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{ background: #fff; }
+      .container{
+        box-shadow:none;
+        border:none;
+        margin:0;
+        border-radius:0;
+      }
+      a::after{ content: " (" attr(href) ")"; font-size:0.85em; color:#444; }
+      .print-note{ display:none; }
+    }
+
+    /* Accessibility: focus outlines for keyboard users */
+    a:focus { outline:3px solid rgba(31,111,235,0.18); outline-offset:2px; }
+  </style>
+</head>
+<body>
+  <div class="container" role="document" aria-label="Resume of Yanin Prasoptham">
+    <!-- Header: name and contact -->
+    <header>
+      <div class="name-block">
+        <h1>YANIN PRASOPTHAM</h1>
+        <div class="subhead">Boston, Massachusetts</div>
+      </div>
+
+      <div class="contact" aria-label="Contact information">
+        <!-- Update this email address if it changes -->
+        <div><a href="mailto:yprasoptham@gmail.com">yprasoptham@gmail.com</a></div>
+        <!-- If you add LinkedIn/GitHub/portfolio links later, replace the text below with descriptive links -->
+        <div style="color:var(--muted); margin-top:6px;">Yanin Prasoptham</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Start Work Experiences Section -->
+      <section aria-labelledby="work-heading">
+        <h2 id="work-heading">WORK EXPERIENCES</h2>
+
+        <!-- Finance Intern -->
+        <div class="item" id="harrahs">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Finance Intern — Harrah’s and Harvey’s Lake Tahoe</div>
+              <div class="item-meta">Jun 2024 – Jun 2025</div>
+            </div>
+            <div class="item-meta">Lake Tahoe (company)</div>
+          </div>
+
+          <ul class="bullets">
+            <li>Managed cash and non-cash transactions with accuracy in a fast-paced environment.</li>
+            <li>Balanced cash drawers and prepared final balance sheet reports for all gaming departments.</li>
+            <li>Processed guest credit applications, verifying relevant information to ensure completeness.</li>
+            <li>Complied with state regulations related to anti-money laundering (AML) requirements.</li>
+          </ul>
+        </div>
+
+        <!-- Researcher at TDRI -->
+        <div class="item" id="tdri">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Researcher — Thailand Development Research Institute (TDRI)</div>
+              <div class="item-meta">Mar 2023 – May 2024</div>
+            </div>
+            <div class="item-meta">Bangkok, Thailand</div>
+          </div>
+
+          <div style="margin-top:8px; color:var(--muted); font-weight:600;">Project: COVID and rural transformation in Thailand</div>
+          <ul class="bullets">
+            <li>Managed the project plan and schedule to meet deadlines and project milestones.</li>
+            <li>Collected and analyzed data from primary and secondary sources using Stata and Excel.</li>
+            <li>Collaborated with research teams and stakeholders to refine research objectives and methodology.</li>
+            <li>Utilized AI tools (e.g., ChatGPT and Copilot) to generate ideas and improve work efficiency.</li>
+            <li>Contributed to research papers, reports, and summaries focused on agricultural economics.</li>
+          </ul>
+
+          <div style="margin-top:10px; color:var(--muted); font-weight:600;">Project: Feasible Analysis to bio-mass burning: rice and cane</div>
+          <ul class="bullets">
+            <li>Drafted informative research proposal sections on biomass burning of rice and cane.</li>
+            <li>Designed questionnaire surveys covering background, farming methods, cost–benefit, and behavioral factors.</li>
+            <li>Organized offline and online in-depth interviews with respondents to collect qualitative data.</li>
+          </ul>
+        </div>
+
+        <!-- Research Assistant at Chulalongkorn -->
+        <div class="item" id="chula">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Research Assistant — Chulalongkorn University</div>
+              <div class="item-meta">May 2021 – Aug 2024</div>
+            </div>
+            <div class="item-meta">Bangkok, Thailand</div>
+          </div>
+
+          <div style="margin-top:8px; color:var(--muted); font-weight:600;">Project: Feasibility analysis of water management project in Eastern Economic Corridor</div>
+          <ul class="bullets">
+            <li>Calculated marginal value added of water usage using a marginal value of water model.</li>
+            <li>Performed cost–benefit analysis using financial models and compared alternatives.</li>
+            <li>Contributed to report drafting and prepared presentation slides for stakeholders.</li>
+          </ul>
+
+          <div style="margin-top:10px; color:var(--muted); font-weight:600;">Project: R&D and the expansion of Thailand’s growth</div>
+          <ul class="bullets">
+            <li>Conducted literature review for meta-regression analysis (MRA) on R&D topics.</li>
+            <li>Prepared and visualized descriptive statistics with Stata.</li>
+            <li>Proofread and edited sections of the research report.</li>
+          </ul>
+        </div>
+
+        <!-- Product Development Intern -->
+        <div class="item" id="studata">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Product Development Intern — STUDATA</div>
+              <div class="item-meta">May 2022 – Jul 2022</div>
+            </div>
+            <div class="item-meta">Remote / Company</div>
+          </div>
+
+          <ul class="bullets">
+            <li>Designed, uploaded, and formatted mock SAT Math exams using LaTeX, ensuring code accuracy and linking each item to its topic for adaptive learning.</li>
+            <li>Collaborated on an intelligent feedback algorithm to redirect students to foundational concepts.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Work Experiences Section -->
+
+      <!-- Start Experiential Learning Section -->
+      <section aria-labelledby="experiential-heading">
+        <h2 id="experiential-heading">EXPERIENTIAL LEARNING</h2>
+
+        <div class="item" id="build-fellowship">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Student Consultant — Build Fellowship program</div>
+              <div class="item-meta">Sep 2025 – Oct 2025</div>
+            </div>
+            <div class="item-meta">Project / Fellowship</div>
+          </div>
+
+          <ul class="bullets">
+            <li>Constructed and optimized an investment portfolio using Markowitz theory, estimating transaction costs in Python.</li>
+            <li>Collected and cleaned financial data to support portfolio analysis.</li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Experiential Learning Section -->
+
+      <!-- Start Education Section -->
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">EDUCATION</h2>
+
+        <div class="item" id="suffolk">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Suffolk University</div>
+              <div class="item-meta">Sep 2025 – Dec 2026</div>
+            </div>
+            <div class="item-meta">Master of Science in Business Analytics — Finance Concentration</div>
+          </div>
+        </div>
+
+        <div class="item" id="chulalongkorn-degree">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Chulalongkorn University</div>
+              <div class="item-meta">Jun 2023</div>
+            </div>
+            <div class="item-meta">Bachelor of Economics — GPAX: 3.81</div>
+          </div>
+
+          <div style="margin-top:8px;">
+            <strong>Relevant coursework:</strong>
+            <div style="color:var(--muted); margin-top:6px;">
+              Statistics; Macroeconomics; Microeconomics; Intro to Econometrics; Time Series; Microeconometrics; Corporate Finance
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Education Section -->
+
+      <!-- Start Skills & Interests Section -->
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">SKILLS &amp; INTERESTS</h2>
+
+        <div style="margin-bottom:10px;">
+          <strong>Skills:</strong>
+          <div class="chips" aria-label="Technical and professional skills">
+            <span class="chip">Microsoft Office</span>
+            <span class="chip">STATA</span>
+            <span class="chip">SPSS</span>
+            <span class="chip">Python</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Cost–Benefit Analysis</span>
+            <span class="chip">Data visualization</span>
+            <span class="chip">Problem solving</span>
+          </div>
+        </div>
+
+        <div>
+          <strong>Interests:</strong>
+          <div style="color:var(--muted); margin-top:6px;">
+            Actuarial Science; Business Analytics; Finance; Climate Change; Supply Chain
+          </div>
+        </div>
+      </section>
+      <!-- End Skills & Interests Section -->
+
+      <div class="print-note" aria-hidden="true">
+        <!-- Print-friendly note (hidden in print): -->
+        Updated from original CV content. To edit, modify the relevant sections above.
+      </div>
+    </main>
+  </div>
+</body>
+</html>
 
